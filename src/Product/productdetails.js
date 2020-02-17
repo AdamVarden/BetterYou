@@ -8,7 +8,7 @@ class ProductsDetails extends React.Component {
         super();
 
     }
-    componentDidMount() {
+/*     componentDidMount() {
 
         Axios.get('http://localhost:4000/api/products/' + this.props.match.params.Category)
         .then((response)=>{
@@ -19,7 +19,7 @@ class ProductsDetails extends React.Component {
             })
         })
         .catch()
-    }
+    } */
 
 
     render() {
