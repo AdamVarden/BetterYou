@@ -23,7 +23,7 @@ class View extends React.Component {
         return (
 
             <div className="App">
-              <h1>HEYY</h1>
+              <h1>View Component</h1>
               <Products myProducts={this.state.products}></Products> 
       
             </div>

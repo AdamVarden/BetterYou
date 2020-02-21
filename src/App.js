@@ -6,7 +6,10 @@ import Navbar from 'react-bootstrap/Navbar';
 import { Switch, Route, BrowserRouter } from 'react-router-dom';
 import View from './Components/view';
 import Category from './Components/category';
-
+import Button from 'react-bootstrap/Button'
+import MainMenu from './Components/mainMenu';
+import Menu, { SubMenu, Item as MenuItem, Divider, ItemGroup as MenuItemGroup } from 'rc-menu';
+import 'rc-menu/assets/index.css';
 
 class App extends React.Component {
   render() {
@@ -14,17 +17,16 @@ class App extends React.Component {
       <BrowserRouter>
 
         <div className="App">
-          <Navbar bg="light" expand="lg">
-            <Nav>
-              <Nav.Item>
-                <Nav.Link href="/view">All Products </Nav.Link>
-              </Nav.Item>
-              <Nav.Item>
-                <Nav.Link href="/category/Foundation">Category Check </Nav.Link>
-              </Nav.Item>
-            </Nav>
-          </Navbar>
+          <Menu mode="horizontal">
+            <MenuItem>Brands</MenuItem>
+            <SubMenu title="Area of Face">
+              <SubMenu title="Face">
+                <MenuItem><a href="/category/Foundation">Foundation</a></MenuItem>
+              </SubMenu>
+            </SubMenu>
+          </Menu>
           <Switch>
+          <Route exact path="/" component={MainMenu} />
 
             <Route path="/view" component={View} />
             <Route path="/category/:Category" component={Category} />

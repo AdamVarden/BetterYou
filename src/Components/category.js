@@ -26,7 +26,7 @@ class Category extends React.Component {
         return (
 
             <div className="App">
-              <h1>MEEE</h1>
+              <h1>Category</h1>
               <Products myProducts={this.state.products}></Products> 
       
             </div>
