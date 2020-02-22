@@ -1,5 +1,33 @@
 .App {
   text-align: center;
+
+}
+.Carousel{
+  background-color: black;
+  height: 670px;
+  width:  1300px;
+  margin: auto;
+}
+
+/* Controls the entire body styling */
+body{
+  font-family: 'Times New Roman', Times, serif;
+}
+
+/* Controls the images for the Carousel */
+.image{
+  height: 600px;
+  width:  1000px;
+}
+
+/* Controls all the a tags in the project*/
+a{
+  text-decoration: none;
+  color: black;
+}
+
+a:hover{
+  text-decoration: none;
 }
 
 .App-logo {
@@ -12,6 +40,8 @@
     animation: App-logo-spin infinite 20s linear;
   }
 }
+
+
 
 .App-header {
   background-color: #282c34;

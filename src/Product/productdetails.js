@@ -24,7 +24,9 @@ class ProductsDetails extends React.Component {
 
     render() {
         return (
-            <div>
+
+            <div className ="row">
+
                 <Card style={{ width: '18rem' }}>
                     <Card.Img className="cardImage"  variant="top" src= {this.props.product.Shades[0]["110C"]} />
                     <Card.Body>
@@ -34,8 +36,8 @@ class ProductsDetails extends React.Component {
                         <Button>Shop Now</Button>
                     </Card.Body>
                 </Card>
-            </div>
 
+            </div>
 
         );
     }
