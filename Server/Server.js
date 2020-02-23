@@ -49,10 +49,7 @@ const productsSchema = new Schema({
 const ProductsModel = mongoose.model('products', productsSchema);
 
 
-app.get('/products', (req, res) => {
-    res.sendFile(path.join(__dirname + '/index.html'));
-});
-
+//For retrieving
 app.get('/api/products', (req, res) => {
 
     ProductsModel.find((err, data) => {
@@ -61,7 +58,7 @@ app.get('/api/products', (req, res) => {
 
 })
 
-
+// Displays the type of product
 app.get('/api/products/:Category', (req, res) => {
     console.log(req.params.Category);
 
@@ -69,7 +66,18 @@ app.get('/api/products/:Category', (req, res) => {
         res.json(data);
     })
 })
-//-----------------------------------------------
+
+/* app.get('/api/products/:Name', (req, res) => {
+    console.log(req.params.Name);
+
+    ProductsModel.find({'Name':req.params.Name}, (error, data) => {
+        res.json(data);
+    })
+})  */
+
+
+
+// Displays the brands products
 app.get('/api/products/:Brand/:Category', (req, res) => {
     console.log(req.params.Category);
     console.log(req.params.Brand);
@@ -78,6 +86,10 @@ app.get('/api/products/:Brand/:Category', (req, res) => {
         res.json(data);
     })
 })
-//--------------------------------------
+
+app.get('/products', (req, res) => {
+    res.sendFile(path.join(__dirname + '/index.html'));
+});
+
 //Listen
 app.listen(port, () => console.log(`Server listening on port ${port}!`))

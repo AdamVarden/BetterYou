@@ -33,7 +33,7 @@ class ProductsDetails extends React.Component {
                         <Card.Title>{this.props.product.Name}</Card.Title>
 
                         <Card.Text>€{this.props.product.Price}</Card.Text>
-                        <Button>Shop Now</Button>
+                        <Button >Shop Now</Button>
                     </Card.Body>
                 </Card>
 

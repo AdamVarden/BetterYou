@@ -5,6 +5,7 @@ import { Switch, Route, BrowserRouter } from 'react-router-dom';
 import View from './Components/view';
 import Category from './Components/category';
 import MainMenu from './Components/mainMenu';
+import ProductPage from './Components/productpage'
 import Menu, { SubMenu, Item as MenuItem } from 'rc-menu';
 import 'rc-menu/assets/index.css';
 import Brand from './Components/brand';
@@ -108,7 +109,8 @@ class App extends React.Component {
             <Route path="/view" component={View} />
             <Route path="/category/:Category" component={Category} />
             <Route path="/brand/:Brand/:Category" component={Brand} />
-
+            <Route path="/productpage/:Name" component={ProductPage} />
+           
           </Switch>
 
         </div>
