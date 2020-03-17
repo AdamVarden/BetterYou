@@ -16,9 +16,9 @@ class App extends React.Component {
       <BrowserRouter>
 
         <div className="App">
-          <Menu style = {{color:"black"}} mode="horizontal">
+          <Menu style = {{color:"Pink",backgroundColor:"Black", }} mode="horizontal">
             <MenuItem><a class = "HomeButton" href="/">Better You</a></MenuItem>
-            <SubMenu title="Brands">
+            <SubMenu  title="Brands">
               <SubMenu title="Fenty">
 
                 <MenuItem><a href="/brand/Fenty/Primer">Primer</a></MenuItem>

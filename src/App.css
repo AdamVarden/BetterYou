@@ -2,32 +2,51 @@
   text-align: center;
 
 }
+
+/* Controls the size for the Carousel */
 .Carousel{
   background-color: black;
-  height: 670px;
-  width:  1300px;
+  height: 400px;
+  width:  1000px;
   margin: auto;
+}
+
+/* Controls the images for the Carousel */
+.image{
+  height: 400px;
+  width:  800px;
+}
+
+.info{
+  background-color: gray;
+  background-position: center;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+  width:  190vh;
+  float: none;
+  margin: 0 auto;
 }
 
 /* Controls the entire body styling */
 body{
   font-family: 'Times New Roman', Times, serif;
+  background-color: black;
 }
 
-/* Controls the images for the Carousel */
-.image{
-  height: 600px;
-  width:  1000px;
+h1{
+  color: pink;
 }
 
 /* Controls all the a tags in the project*/
 a{
   text-decoration: none;
-  color: black;
+  color: Pink;
 }
 
 a:hover{
   text-decoration: none;
+  color: gold;
 }
 
 .App-logo {

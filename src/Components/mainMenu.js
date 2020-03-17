@@ -7,8 +7,8 @@ class MainMenu extends React.Component {
     return (
 
       <div className="App">
-        <h1 className = "titles">Welcome to Better You</h1>
-        <Carousel className = "Carousel">
+        <h1 className="titles">Welcome to Better You</h1>
+        <Carousel className="Carousel">
           <Carousel.Item>
             <img
               className="image"
@@ -34,6 +34,11 @@ class MainMenu extends React.Component {
 
           </Carousel.Item>
         </Carousel>
+        <br></br>
+        <div className="info">
+          <h1>Info Section</h1>
+        </div>
+        <br></br>
       </div>
     );
   }

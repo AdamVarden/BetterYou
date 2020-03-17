@@ -59,21 +59,21 @@ app.get('/api/products', (req, res) => {
 })
 
 // Displays the type of product
-app.get('/api/products/:Category', (req, res) => {
+/* app.get('/api/products/:Category', (req, res) => {
     console.log(req.params.Category);
 
     ProductsModel.find({'Category':req.params.Category}, (error, data) => {
         res.json(data);
     })
-})
+}) */
 
-/* app.get('/api/products/:Name', (req, res) => {
+ app.get('/api/products/:Name', (req, res) => {
     console.log(req.params.Name);
 
     ProductsModel.find({'Name':req.params.Name}, (error, data) => {
         res.json(data);
     })
-})  */
+})  
 
 
 

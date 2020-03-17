@@ -1,7 +1,7 @@
 import React from 'react';
 import '../App.css';
 import Card from 'react-bootstrap/Card';
-import { Button } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 import Axios from 'axios';
 class ProductsDetails extends React.Component {
     constructor() {
@@ -27,13 +27,13 @@ class ProductsDetails extends React.Component {
 
             <div className ="row">
 
-                <Card style={{ width: '18rem' }}>
+                <Card style={{ width: '18rem',backgroundColor:'grey' }}>
                     <Card.Img className="cardImage"  variant="top" src= {this.props.product.Shades[0]["110C"]} />
                     <Card.Body>
                         <Card.Title>{this.props.product.Name}</Card.Title>
 
                         <Card.Text>€{this.props.product.Price}</Card.Text>
-                        <Button >Shop Now</Button>
+                        <Link to= {"/productpage/"+this.props.product.Name} >Shop Now</Link>
                     </Card.Body>
                 </Card>
 
