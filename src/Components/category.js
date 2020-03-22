@@ -11,7 +11,7 @@ class Category extends React.Component {
           
         console.log(this.props.match.params.Category);
 
-        Axios.get('http://localhost:4000/api/products/' + this.props.match.params.Category)
+        Axios.get('http://localhost:4000/api/products/'+ this.props.match.params.AOF+'/' + this.props.match.params.Category)
         .then(response => {
             console.log(response.data);
             this.setState({ products: response.data });

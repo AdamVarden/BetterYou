@@ -17,6 +17,10 @@
   width:  800px;
 }
 
+.ProductImage{
+  height: 600px;
+  width:  500px; 
+}
 .info{
   background-color: gray;
   background-position: center;
@@ -32,6 +36,7 @@
 body{
   font-family: 'Times New Roman', Times, serif;
   background-color: black;
+  color: white;
 }
 
 h1{
@@ -41,7 +46,7 @@ h1{
 /* Controls all the a tags in the project*/
 a{
   text-decoration: none;
-  color: Pink;
+  color: Black;
 }
 
 a:hover{

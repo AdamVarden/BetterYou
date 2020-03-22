@@ -28,6 +28,7 @@ app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json())
 
 const productsSchema = new Schema({
+    AOF:String,
     Category: String,
     Name : String,
     Brand: String,
@@ -48,24 +49,29 @@ const productsSchema = new Schema({
 
 const ProductsModel = mongoose.model('products', productsSchema);
 
+app.get('/products', (req, res) => {
+    res.sendFile(path.join(__dirname + '/index.html'));
+}); 
 
-//For retrieving
+  //For retrieving
 app.get('/api/products', (req, res) => {
 
     ProductsModel.find((err, data) => {
         res.json({ products: data });
     })
 
-})
-
-// Displays the type of product
-/* app.get('/api/products/:Category', (req, res) => {
+})  
+/* 
+ // Displays the type of product
+app.get('/api/products/:AOF/:Category', (req, res) => {
     console.log(req.params.Category);
+    console.log(req.params.AOF);
 
-    ProductsModel.find({'Category':req.params.Category}, (error, data) => {
+    ProductsModel.find({'AOF':req.params.AOF,'Category':req.params.Category}, (error, data) => {
         res.json(data);
     })
-}) */
+})   */ 
+
 
  app.get('/api/products/:Name', (req, res) => {
     console.log(req.params.Name);
@@ -87,9 +93,7 @@ app.get('/api/products/:Brand/:Category', (req, res) => {
     })
 })
 
-app.get('/products', (req, res) => {
-    res.sendFile(path.join(__dirname + '/index.html'));
-});
+
 
 //Listen
 app.listen(port, () => console.log(`Server listening on port ${port}!`))

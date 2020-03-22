@@ -18,7 +18,6 @@ class ProductPage extends React.Component {
                 const products = response.data;
                 this.setState({ 
                     products
-
                  });
 
 
@@ -31,23 +30,18 @@ class ProductPage extends React.Component {
         return (
 
             <div className="App">
-                <h1>Product Page</h1>
 
                 {this.state.products.map(products =>
-                    <Card style={{ width: '18rem' }}>
-                        <Card.Img key className="cardImage" variant="top" src={products.Shades} />
+                    <div>
+                        <h1>{products.Name}</h1>
+                        <img src = {products.DefaultImage} className = "ProductImage"></img>
+                         <h2>Price: €{products.Price}</h2>
+                         <div>
+                            <p>{products.Info}</p>
+                        </div>
+                    </div>
 
-                        <Card.Body>
-                            <Card.Title>{products.Name}</Card.Title>
-                        
-                            <Card.Text>€{products.Price}</Card.Text>
-                            <Select value={products.Shades} options={products.Shades}></Select>
-                        </Card.Body>
-                    </Card>)}
-
-
-
-
+                    )}
 
             </div>
         );

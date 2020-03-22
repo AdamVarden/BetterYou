@@ -28,7 +28,7 @@ class ProductsDetails extends React.Component {
             <div className ="row">
 
                 <Card style={{ width: '18rem',backgroundColor:'grey' }}>
-                    <Card.Img className="cardImage"  variant="top" src= {this.props.product.Shades[0]["110C"]} />
+                    <Card.Img className="cardImage"  variant="top" src= {this.props.product.DefaultImage} />
                     <Card.Body>
                         <Card.Title>{this.props.product.Name}</Card.Title>
 
