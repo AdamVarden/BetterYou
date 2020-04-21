@@ -1,6 +1,5 @@
 import React from 'react';
 import '../App.css';
-import ReactPlayer from 'react-player';
 import Youtube from 'react-youtube';
 //import glammakeup1 from './glammakeup1'
 

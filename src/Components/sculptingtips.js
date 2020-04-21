@@ -1,6 +1,5 @@
 import React from 'react';
 import '../App.css';
-import ReactPlayer from 'react-player';
 import Youtube from 'react-youtube';
 
 class SculptingTips extends React.Component {
