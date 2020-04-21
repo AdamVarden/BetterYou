@@ -1,4 +1,6 @@
 import React from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 class LogIn extends React.Component {
     render (){
@@ -7,3 +9,4 @@ class LogIn extends React.Component {
         )
     }
 }
+export default LogIn;

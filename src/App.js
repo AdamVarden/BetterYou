@@ -24,8 +24,7 @@ class App extends React.Component {
         <div className="App">
           <Menu style = {{color:"Pink",backgroundColor:"Black", }} mode="horizontal">
             <MenuItem ><a style={{color:"pink"}} className = "HomeButton" href="/">Better You</a></MenuItem>
-            <MenuItem ><a style={{color:"pink"}} className = "LogIn" href="/login">LogIn</a></MenuItem>
-            <MenuItem ><a style={{color:"pink"}} className = "Register" href="/register">Register</a></MenuItem>
+
             <SubMenu  title="Brands">
               <SubMenu title="Fenty">
 
@@ -114,7 +113,8 @@ class App extends React.Component {
                
             </SubMenu>
             <MenuItem><a style={{color:"pink"}}>Cart</a></MenuItem>
-
+            <MenuItem ><a style={{color:"pink"}} className = "LogIn" href="/login">LogIn</a></MenuItem>
+            <MenuItem ><a style={{color:"pink"}} className = "Register" href="/register">Register</a></MenuItem>
           </Menu>
 
           <Switch>
@@ -127,6 +127,8 @@ class App extends React.Component {
             <Route path="/eyetips" component={EyesTips} />
             <Route path="/sculptingtips" component={SculptingTips} />
             <Route path="/productpage/:Name" component={ProductPage} />
+            <Route path="/login" component={LogIn} />
+            <Route path="/register" component={Register} />
            
           </Switch>
         </div>

@@ -36,7 +36,7 @@ class MainMenu extends React.Component {
         </Carousel>
         <br></br>
         <div className="info">
-          <h1>Info Section</h1>
+          <h1></h1>
         </div>
         <br></br>
       </div>
