@@ -1,6 +1,5 @@
 import React from 'react';
 import { Input, Checkbox, Button } from 'antd';
-import {gql, graphql} from 'react-apollo';
 
 class Register extends React.Component {
     state = {
@@ -54,7 +53,5 @@ class Register extends React.Component {
         )
     }
 }
-const mutation = gql`
-`;
 
-export default graphql(mutation)(Register);
+export default Register;

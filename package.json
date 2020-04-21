@@ -13,6 +13,8 @@
     "bootstrap": "^4.4.1",
     "cors": "^2.8.5",
     "express": "^4.17.1",
+    "graphql": "^15.0.0",
+    "graphql-tag": "^2.10.3",
     "mongoose": "^5.9.1",
     "rc-menu": "^7.5.5",
     "react": "^16.12.0",

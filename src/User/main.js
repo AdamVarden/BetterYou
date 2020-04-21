@@ -9,7 +9,7 @@ import Routes from './routes';
 import ReactDOM from 'react-dom';
 
 const networkInterface = createNetworkInterface({
-    uri: 'http://localhost:3000'
+    url: 'http://localhost:3000'
 });
 const client = new ApolloClient({
     networkInterface: networkInterface
