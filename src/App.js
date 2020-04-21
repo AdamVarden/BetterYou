@@ -13,6 +13,8 @@ import EyesTips from './Components/eyetips';
 import SculptingTips from './Components/sculptingtips';
 import Button from 'react-bootstrap/Button';
 import ProductPage from './Components/productpage';
+import LogIn from './User/routes/login';
+import Register from './User/routes/register';
 
 class App extends React.Component {
   render() {
@@ -21,7 +23,9 @@ class App extends React.Component {
 
         <div className="App">
           <Menu style = {{color:"Pink",backgroundColor:"Black", }} mode="horizontal">
-            <MenuItem ><a style={{color:"pink"}} class = "HomeButton" href="/">Better You</a></MenuItem>
+            <MenuItem ><a style={{color:"pink"}} className = "HomeButton" href="/">Better You</a></MenuItem>
+            <MenuItem ><a style={{color:"pink"}} className = "LogIn" href="/login">LogIn</a></MenuItem>
+            <MenuItem ><a style={{color:"pink"}} className = "Register" href="/register">Register</a></MenuItem>
             <SubMenu  title="Brands">
               <SubMenu title="Fenty">
 
@@ -125,7 +129,6 @@ class App extends React.Component {
             <Route path="/productpage/:Name" component={ProductPage} />
            
           </Switch>
-
         </div>
       </BrowserRouter>
     );
