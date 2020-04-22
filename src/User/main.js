@@ -1,22 +1,14 @@
-import React from './node_modules/react';
-import '../App.css';
-import { ApolloProvider} from 'react-apollo';
-import {ApolloClient, createNetworkInterface } from 'react-apollo';
-import Button from './node_modules/antd/lib/button';
-import logo from './logo/svg';
-import 'antd/dist/antd.css';
-import Routes from './routes';
-import ReactDOM from 'react-dom';
+import React, { Component } from "react";
+import "./App.css";
+import Register from "./Register";
 
-const networkInterface = createNetworkInterface({
-    url: 'http://localhost:3000'
-});
-const client = new ApolloClient({
-    networkInterface: networkInterface
-});
-const Main = () => (
-    <ApolloProvider client = {client}>
-        <Routes />
-    </ApolloProvider>
-);
-export default Register;
+class Main extends Component {
+   render(){
+       return (
+           <div className="Main">
+               <Register ></Register>
+           </div>
+       )
+   }
+}
+export default Main;
