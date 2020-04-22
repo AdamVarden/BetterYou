@@ -29,15 +29,15 @@ class ProductPage extends React.Component {
     render() {
         return (
 
-            <div className="App">
+            <div >
 
                 {this.state.products.map(products =>
                     <div>
-                        <h1>{products.Name}</h1>
+                        <h1 className = "titles">{products.Name}</h1>
                         <img src = {products.DefaultImage} className = "ProductImage"></img>
-                         <h2>Price: €{products.Price}</h2>
+                         <h2 className = "titles">Price: €{products.Price}</h2>
                          <div>
-                            <p>{products.Info}</p>
+                            <p className = "titles">{products.Info}</p>
                         </div>
                     </div>
 

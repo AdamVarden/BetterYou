@@ -12,7 +12,7 @@ class MainMenu extends React.Component {
           <Carousel.Item>
             <img
               className="image"
-              src="https://www.boots.ie/resource/image/2174128/heroteaser_short/1360/502/bf0c93784b39cd879e650eed67ece2bf/ME/2019-12-project-domino-pre-launch-bt-hc-01.jpg"
+              src="https://farm8.staticflickr.com/7532/15698143634_3d1ed3313c_b.jpg"
             />
 
           </Carousel.Item>
@@ -20,7 +20,7 @@ class MainMenu extends React.Component {
             <img
 
               className="image"
-              src="https://www.boots.ie/resource/image/2181938/heroteaser_short/1360/502/650f6b62df78929dc263e8babe471553/Mn/34082-beauty-eyes-hero-7a-maybelline-supplied.jpg"
+              src="https://metro.co.uk/wp-content/uploads/2017/09/rhianna-launches-fenty-beauty-in-the-uk.png"
             />
 
           </Carousel.Item>
@@ -28,7 +28,7 @@ class MainMenu extends React.Component {
             <img
               className="image"
 
-              src="https://www.boots.ie/resource/image/2182474/heroteaser_short/1360/502/f59cc5d9f2e3520efe1bb7b8d06d3e6f/KC/33365-beauty-accessories-hero-6a-essieexpressie.jpg"
+              src="https://lh3.googleusercontent.com/proxy/uTzOAPPtsaCP4zgHt_0Ws3SxU2go742ie2MFUnW1JNNzEV5epJAZ8Udjl3rByVErwc8wKHb7809XWOSBG4kcSDhyzaKWD8hdpyuByEe21sT5VAoyBYPgfrAQ1NKKASEfLizRTWJfrzEzRI7h6iFyR5KhBRjKzhfFSg"
             />
 
 
@@ -36,7 +36,12 @@ class MainMenu extends React.Component {
         </Carousel>
         <br></br>
         <div className="info">
-          <h1></h1>
+          <h1>Welcome to Better You</h1>
+          <h4>
+            Better You is a brand that helps make a better you. We pride ourselves on individuality. 
+            We may be a small brand but we aim to grow big. We provide a select few of cosmetic brands for your choosing.
+            We also provide tips and tricks for our users to better help their make up journey 
+          </h4>
         </div>
         <br></br>
       </div>

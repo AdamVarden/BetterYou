@@ -22,14 +22,14 @@ class EyesTips extends React.Component {
         return (
 
             <div className="App">
-              <h1>EyesTips</h1>
+              <h1 className = "titles">Eyes Tips</h1>
               <Youtube
                videoId = 'io3WdVxwi_Y'
                opts={opts}
                onReady={this.videoOnReady}
                />
                <p>
-                 <h3>Tips For Hooded Eyes!!</h3>
+                 <h3 className = "titles">Tips For Hooded Eyes!!</h3>
                  1. Line your upper lid only with a fine-point eyeliner pen.<br></br>
                  2. Blend colors light to dark at an upward angle.<br></br>
                  3. Prime your eyes to minimize transfer.<br></br>
@@ -47,7 +47,7 @@ class EyesTips extends React.Component {
                onReady={this.videoOnReady}
                />
                <p>
-                 <h3>What To DO and What NOT To Do When It Comes To Eyeshadow!!</h3>
+                 <h3 className = "titles">What To DO and What NOT To Do When It Comes To Eyeshadow!!</h3>
                  1. Always Use A Primer<br></br>
                  Your main goal is to make sure that we have a clear and smooth skin before applying eyeshadow.<br></br>
                  2. Know Your Transition Shades<br></br>
@@ -77,7 +77,7 @@ class EyesTips extends React.Component {
                onReady={this.videoOnReady}
                />
                <p>
-                 <h3>Glam MakeUp!!</h3>
+                 <h3 className = "titles">Glam MakeUp!!</h3>
                  Glam Makeup is perfect for those special occassions whene you just want to look
                  that little bit extra. Follow the tutorial above for a warm golden brown eyelook
                  that will guarantee people staring and wondering where you got them skills from.

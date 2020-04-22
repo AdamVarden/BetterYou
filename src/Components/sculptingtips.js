@@ -21,14 +21,14 @@ class SculptingTips extends React.Component {
       return (
 
             <div className="App">
-              <h1>SculptingTips</h1>
+              <h1 className = "titles">Sculpting Tips</h1>
               <Youtube
                videoId = 'BEweWXa5Twk'
                opts={opts}
                onReady={this.videoOnReady}
                />
                <p>
-               <h3> How to Contour Your Face To the Gods</h3>
+               <h3 className = "titles"> How to Contour Your Face To the Gods</h3>
                  Christen shows exactly how to change you appearance with contouring and highlighting in
                  all the right places.
                </p>
@@ -38,7 +38,7 @@ class SculptingTips extends React.Component {
                onReady={this.videoOnReady}
                />
                <p>
-               <h3>5 Easy Tricks On Contouring</h3>
+               <h3 className = "titles">5 Easy Tricks On Contouring</h3>
                Follow these 5 easy steps by InStyle on how to sculpt your face to get that snatched look.
                </p>
                <Youtube

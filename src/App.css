@@ -1,8 +1,12 @@
 .App {
   text-align: center;
-
+  font-family: 'Times New Roman', Times, serif;
+  color: white;
 }
 
+.titles{
+  color: pink;
+}
 /* Controls the size for the Carousel */
 .Carousel{
   background-color: black;
@@ -24,6 +28,7 @@
 .info{
   background-color: gray;
   background-position: center;
+  font-family: 'Times New Roman', Times, serif;
   justify-content: center;
   align-items: center;
   height: 50vh;

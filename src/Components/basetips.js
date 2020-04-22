@@ -23,7 +23,7 @@ class BaseTips extends React.Component {
         return (
 
             <div className="App">
-              <h1>BaseTips</h1>
+              <h1 className = "titles">Base Tips</h1>
               <p>Below are just a few guidline tips as to how achieve a perfect base for your makeup!!</p>
               <Youtube
                videoId = 'gg_-5HLkM5g'
