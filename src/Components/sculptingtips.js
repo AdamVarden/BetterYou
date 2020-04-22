@@ -47,7 +47,7 @@ class SculptingTips extends React.Component {
                onReady={this.videoOnReady}
                />
                <p>
-               <h3>For Beginners!!</h3>
+               <h3 className = "titles">For Beginners!!</h3>
                Tina is here to provide those who do not know how to sculpt their faces properly, with
                  help, just follow her tutorial for tips and tricks for beginners
                </p>
