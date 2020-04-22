@@ -1,6 +1,6 @@
 import React from 'react';
 
-class Register extends React.Component{
+class Register extends React.Component {
     state = {
         firstName: '',
         lastName: '',
@@ -8,7 +8,7 @@ class Register extends React.Component{
         email: '',
         password: '',
     };
-    change = (e)=> {
+    change = (e) => {
         this.setState({
             [e.target.name]: e.target.value
         });
@@ -17,34 +17,36 @@ class Register extends React.Component{
         e.preventDefault();
         console.log(this.state);
     }
-    render (){
+    render() {
         return (
             <form>
-                <input 
+                <input
                     name='firstName'
-                    placeholder="First Name" 
+                    placeholder="First Name"
                     value={this.state.firstName}
                     //onChange={e => this.setState({firstName: e.target.value})}
                     onChange={e => this.change(e)}
                 />
                 <br />
-                <input 
+                <input
+                    className="input"
                     name="lastName"
-                    placeholder="Last Name" 
+                    placeholder="Last Name"
                     value={this.state.lastName}
                     //onChange={e => this.setState({lastName: e.target.value})}
                     onChange={e => this.change(e)}
                 />
                 <br />
-                <input 
+                <input
+                    className="input"
                     name="username"
-                    placeholder="Username" 
+                    placeholder="Username"
                     value={this.state.username}
                     //onChange={e => this.setState({username: e.target.value})}
                     onChange={e => this.change(e)}
                 />
                 <br />
-                <input 
+                <input
                     name="email"
                     placeholder="Email"
                     value={this.state.email}
@@ -52,10 +54,12 @@ class Register extends React.Component{
                     onChange={e => this.change(e)}
                 />
                 <br />
-                <input 
+                <input
+                                    className = "input"
+
                     name="password"
                     type='password'
-                    placeholder="Password" 
+                    placeholder="Password"
                     value={this.state.password}
                     //onChange={e => this.setState({password: e.target.value})}
                     onChange={e => this.change(e)}

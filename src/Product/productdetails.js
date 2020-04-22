@@ -8,20 +8,7 @@ class ProductsDetails extends React.Component {
         super();
 
     }
-/*     componentDidMount() {
-
-        Axios.get('http://localhost:4000/api/products/' + this.props.match.params.Category)
-        .then((response)=>{
-            //Sets the state received from the database
-            this.setState({
-                          
-
-            })
-        })
-        .catch()
-    } */
-
-
+    //Displays the product info 
     render() {
         return (
 

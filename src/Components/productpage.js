@@ -9,6 +9,7 @@ class ProductPage extends React.Component {
     state = {
         products: [],
     }
+    //Gets the product info from the result data
     componentDidMount() {
 
         Axios.get('http://localhost:4000/api/products/' + this.props.match.params.Name)
@@ -25,7 +26,7 @@ class ProductPage extends React.Component {
             })
             .catch()
     }
-
+    //Displays the products info
     render() {
         return (
 

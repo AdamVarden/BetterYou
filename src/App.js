@@ -34,7 +34,6 @@ class App extends React.Component {
                 <MenuItem><a href="/brand/Fenty/Powder">Powder</a></MenuItem>
                 <MenuItem><a href="/brand/Fenty/Bronzer">Bronzer</a></MenuItem>
                 <MenuItem><a href="/brand/Fenty/Contour">Contour</a></MenuItem>
-                <MenuItem><a href="/brand/Fenty/Blush">Blush</a></MenuItem>
                 <MenuItem><a href="/brand/Fenty/Highlighter">Highlighter</a></MenuItem>
                 <MenuItem><a href="/brand/Fenty/Lips">Lips</a></MenuItem>
                 <MenuItem><a href="/brand/Fenty/Eyeshadow">Eyeshadow</a></MenuItem>
