@@ -28,7 +28,7 @@ class MainMenu extends React.Component {
             <img
               className="image"
 
-              src="https://lh3.googleusercontent.com/proxy/uTzOAPPtsaCP4zgHt_0Ws3SxU2go742ie2MFUnW1JNNzEV5epJAZ8Udjl3rByVErwc8wKHb7809XWOSBG4kcSDhyzaKWD8hdpyuByEe21sT5VAoyBYPgfrAQ1NKKASEfLizRTWJfrzEzRI7h6iFyR5KhBRjKzhfFSg"
+              src="https://dy6g3i6a1660s.cloudfront.net/sYNmGEJdix-twIsHNGIN3weoBLA/orig.jpg"
             />
 
 
@@ -36,8 +36,8 @@ class MainMenu extends React.Component {
         </Carousel>
         <br></br>
         <div className="info">
-          <h1>Welcome to Better You</h1>
-          <h4>
+          <h1 className = "titles">Welcome to Better You</h1>
+          <h4 className = "titles">
             Better You is a brand that helps make a better you. We pride ourselves on individuality. 
             We may be a small brand but we aim to grow big. We provide a select few of cosmetic brands for your choosing.
             We also provide tips and tricks for our users to better help their make up journey 

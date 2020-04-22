@@ -38,12 +38,15 @@ class ProductPage extends React.Component {
                          <h2 className = "titles">Price: €{products.Price}</h2>
                          <div>
                             <p className = "titles">{products.Info}</p>
+                        <select>
+                            <option value = {products.id}>{products.ShadeNames}</option>
+                        </select> 
                         </div>
                     </div>
 
                     )}
-
             </div>
+
         );
     }
 }

@@ -2,6 +2,7 @@
   text-align: center;
   font-family: 'Times New Roman', Times, serif;
   color: white;
+  align-items: center;
 }
 
 .titles{
@@ -26,13 +27,12 @@
   width:  500px; 
 }
 .info{
-  background-color: gray;
   background-position: center;
   font-family: 'Times New Roman', Times, serif;
   justify-content: center;
   align-items: center;
   height: 50vh;
-  width:  190vh;
+  width:  140vh;
   float: none;
   margin: 0 auto;
 }
