@@ -10,7 +10,7 @@
     "antd": "^4.1.4",
     "apollo": "^2.27.0",
     "apollo-client": "^2.6.8",
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "bootstrap": "^4.4.1",
     "cors": "^2.8.5",
     "express": "^4.17.1",
